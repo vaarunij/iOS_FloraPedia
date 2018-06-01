@@ -1,25 +1,78 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+            <string>AmericanTypewriter-Semibold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3" colorLabel="IBBuiltInLabel-Red">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="final" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-nt-DEl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FloraPedia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-p9-vI7">
+                                <rect key="frame" x="32" y="335" width="309" height="42"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vaaruni.joshi@epita.fr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrK-cQ-C5c">
+                                <rect key="frame" x="49" y="616" width="275" height="20"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vaaruni Joshi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8iO-Po-Jhj">
+                                <rect key="frame" x="82" y="588" width="214" height="20"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="PrK-cQ-C5c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="4WW-bq-OPu"/>
+                            <constraint firstAttribute="bottom" secondItem="kBl-nt-DEl" secondAttribute="bottom" id="6Y1-Wy-edx"/>
+                            <constraint firstItem="8iO-Po-Jhj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="7b6-4k-NMd"/>
+                            <constraint firstItem="kBl-nt-DEl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="8T9-zP-iBm"/>
+                            <constraint firstItem="QbZ-p9-vI7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="LZ9-Hq-d58"/>
+                            <constraint firstItem="QbZ-p9-vI7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-1" id="TO8-sM-G3H"/>
+                            <constraint firstAttribute="trailing" secondItem="kBl-nt-DEl" secondAttribute="trailing" id="U7f-Pz-COd"/>
+                            <constraint firstItem="QbZ-p9-vI7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="315" id="ZEw-9S-nbr"/>
+                            <constraint firstItem="PrK-cQ-C5c" firstAttribute="top" secondItem="8iO-Po-Jhj" secondAttribute="bottom" constant="8" id="ZSP-Nm-pqf"/>
+                            <constraint firstItem="kBl-nt-DEl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dru-CV-rUt"/>
+                            <constraint firstItem="8iO-Po-Jhj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="1.5" id="dtl-St-561"/>
+                            <constraint firstAttribute="bottom" secondItem="8iO-Po-Jhj" secondAttribute="bottom" constant="59" id="niL-wL-W0o"/>
+                            <constraint firstItem="PrK-cQ-C5c" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-1" id="qsf-vL-ecq"/>
+                            <constraint firstItem="kBl-nt-DEl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="tgD-rj-ZgK"/>
+                            <constraint firstItem="kBl-nt-DEl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="x1R-CE-Y0F"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="final" width="564" height="1071"/>
+    </resources>
 </document>
